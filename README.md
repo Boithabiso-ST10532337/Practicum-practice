@@ -1,11 +1,11 @@
-# 🌦️ Weather Report App (Android - Kotlin)
+#  Weather Report App (Android - Kotlin)
 
-## 📌 Project Overview
+## Project Overview
 This is a simple Android application built using **Kotlin** that displays a weekly weather report. The app stores weather data in a 2D array and formats it into a readable layout shown on the screen.
 
 ---
 
-## 📱 Features
+## Features
 - Displays a full weekly weather report
 - Shows:
   - Day of the week
@@ -19,7 +19,7 @@ This is a simple Android application built using **Kotlin** that displays a week
 
 ---
 
-## 🧠 Concepts Used
+## Concepts Used
 - Kotlin Arrays (2D arrays)
 - Loops (`for` loop with `until`)
 - StringBuilder for efficient string formatting
@@ -29,7 +29,7 @@ This is a simple Android application built using **Kotlin** that displays a week
 
 ---
 
-## 📊 Data Structure
+## Data Structure
 The weather data is stored in a 2D array:
 
 ```kotlin
