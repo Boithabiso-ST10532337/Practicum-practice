@@ -1,6 +1,8 @@
 package com.example.practicumpractice
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +10,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class DetailedWeather : AppCompatActivity() {
+
+    lateinit var btnShow : Button
+    lateinit var btnExit3 : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -58,6 +64,19 @@ class DetailedWeather : AppCompatActivity() {
 
 // Display the highest temperature
         txtHighest.text = "Highest Temperature: $highest°C"
+
+        btnShow = findViewById(R.id.btnShow)
+        btnExit3 = findViewById(R.id.btnExit3)
+
+        //When user clicks the back home button open main screen
+        btnShow.setOnClickListener {
+            val intent = Intent(this, WeatherReport::class.java)
+            startActivity(intent)
+        }
+        // When user click the exit app button exit app
+        btnExit3.setOnClickListener {
+            finishAffinity()
+        }
 
     }
 }
